@@ -1,0 +1,29 @@
+
+# Python
+__pycache__/
+*.py[cod]
+venv/
+.venv/
+env/
+
+# Environment variables
+.env
+.env.*
+
+# Frontend
+node_modules/
+frontend/dist/
+
+# Local database
+*.db
+*.sqlite
+*.sqlite3
+
+# Experimental datasets
+data/raw/
+data/processed/
+
+# IDE and OS
+.vscode/
+.idea/
+.DS_Store

@@ -1,0 +1,288 @@
+{
+  "dataset": "CWRU 12kHz Drive-End 2048-sample window dataset",
+  "split_strategy": "Grouped by Recording ID (Zero leakage across operational loads)",
+  "train_samples": 2237,
+  "test_samples": 827,
+  "classes": [
+    "Healthy",
+    "Inner Race Fault",
+    "Ball Fault",
+    "Outer Race Fault"
+  ],
+  "models": {
+    "RandomForest": {
+      "train_accuracy": 1.0,
+      "test_accuracy": 1.0,
+      "precision_macro": 1.0,
+      "recall_macro": 1.0,
+      "f1_macro": 1.0,
+      "precision_weighted": 1.0,
+      "recall_weighted": 1.0,
+      "f1_weighted": 1.0,
+      "confusion_matrix": [
+        [
+          473,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          119,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          117,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          118
+        ]
+      ],
+      "confusion_matrix_normalized": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "per_class": {
+        "Healthy": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1_score": 1.0,
+          "support": 473
+        },
+        "Inner Race Fault": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1_score": 1.0,
+          "support": 119
+        },
+        "Ball Fault": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1_score": 1.0,
+          "support": 117
+        },
+        "Outer Race Fault": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1_score": 1.0,
+          "support": 118
+        }
+      },
+      "classification_report": {
+        "Healthy": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 473.0
+        },
+        "Inner Race Fault": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 119.0
+        },
+        "Ball Fault": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 117.0
+        },
+        "Outer Race Fault": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 118.0
+        },
+        "accuracy": 1.0,
+        "macro avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 827.0
+        },
+        "weighted avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 827.0
+        }
+      },
+      "feature_importance": {
+        "std": 0.22388807458814614,
+        "variance": 0.21277184986508327,
+        "rms": 0.19276828100311658,
+        "peak_to_peak": 0.16053899026089108,
+        "kurtosis": 0.13158104706544616,
+        "crest_factor": 0.036009271482202135,
+        "skewness": 0.034235081323801875,
+        "mean": 0.008207404411312789
+      }
+    },
+    "LogisticRegression": {
+      "train_accuracy": 0.9995529727313366,
+      "test_accuracy": 0.9939540507859734,
+      "precision_macro": 0.9895114942528735,
+      "recall_macro": 0.9894598865187101,
+      "f1_macro": 0.9894065894604542,
+      "precision_weighted": 0.994043697619147,
+      "recall_weighted": 0.9939540507859734,
+      "f1_weighted": 0.9939537251221322,
+      "confusion_matrix": [
+        [
+          473,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          115,
+          4,
+          0
+        ],
+        [
+          0,
+          1,
+          116,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          118
+        ]
+      ],
+      "confusion_matrix_normalized": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.9663865546218487,
+          0.03361344537815126,
+          0.0
+        ],
+        [
+          0.0,
+          0.008547008547008548,
+          0.9914529914529915,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "per_class": {
+        "Healthy": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1_score": 1.0,
+          "support": 473
+        },
+        "Inner Race Fault": {
+          "precision": 0.9913793103448276,
+          "recall": 0.9663865546218487,
+          "f1_score": 0.9787234042553191,
+          "support": 119
+        },
+        "Ball Fault": {
+          "precision": 0.9666666666666667,
+          "recall": 0.9914529914529915,
+          "f1_score": 0.9789029535864979,
+          "support": 117
+        },
+        "Outer Race Fault": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1_score": 1.0,
+          "support": 118
+        }
+      },
+      "classification_report": {
+        "Healthy": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 473.0
+        },
+        "Inner Race Fault": {
+          "precision": 0.9913793103448276,
+          "recall": 0.9663865546218487,
+          "f1-score": 0.9787234042553191,
+          "support": 119.0
+        },
+        "Ball Fault": {
+          "precision": 0.9666666666666667,
+          "recall": 0.9914529914529915,
+          "f1-score": 0.9789029535864979,
+          "support": 117.0
+        },
+        "Outer Race Fault": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 118.0
+        },
+        "accuracy": 0.9939540507859734,
+        "macro avg": {
+          "precision": 0.9895114942528735,
+          "recall": 0.9894598865187101,
+          "f1-score": 0.9894065894604542,
+          "support": 827.0
+        },
+        "weighted avg": {
+          "precision": 0.994043697619147,
+          "recall": 0.9939540507859734,
+          "f1-score": 0.9939537251221322,
+          "support": 827.0
+        }
+      },
+      "feature_importance": {
+        "std": 2.309154621176149,
+        "rms": 2.295788965439605,
+        "kurtosis": 2.062088002544654,
+        "peak_to_peak": 1.5935594088824354,
+        "variance": 1.2725528952287164,
+        "skewness": 1.0901906178393386,
+        "crest_factor": 1.0666563283911845,
+        "mean": 0.40437693766440097
+      }
+    }
+  }
+}

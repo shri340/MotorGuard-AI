@@ -1,0 +1,52 @@
+{
+  "train_recordings": [
+    "CWRU_097",
+    "CWRU_098",
+    "CWRU_099",
+    "CWRU_105",
+    "CWRU_106",
+    "CWRU_107",
+    "CWRU_118",
+    "CWRU_119",
+    "CWRU_120",
+    "CWRU_130",
+    "CWRU_131",
+    "CWRU_132"
+  ],
+  "test_recordings": [
+    "CWRU_100",
+    "CWRU_108",
+    "CWRU_121",
+    "CWRU_133"
+  ],
+  "train_samples": 2237,
+  "test_samples": 827,
+  "feature_columns": [
+    "mean",
+    "variance",
+    "std",
+    "rms",
+    "skewness",
+    "kurtosis",
+    "peak_to_peak",
+    "crest_factor"
+  ],
+  "class_names": [
+    "Healthy",
+    "Inner Race Fault",
+    "Ball Fault",
+    "Outer Race Fault"
+  ],
+  "train_class_counts": {
+    "Healthy": 1179,
+    "Inner Race Fault": 353,
+    "Outer Race Fault": 353,
+    "Ball Fault": 352
+  },
+  "test_class_counts": {
+    "Healthy": 473,
+    "Inner Race Fault": 119,
+    "Outer Race Fault": 118,
+    "Ball Fault": 117
+  }
+}
