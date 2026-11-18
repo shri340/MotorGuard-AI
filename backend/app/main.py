@@ -24,14 +24,20 @@ app = FastAPI(
     version="1.0.0"
 )
 
-# Enable CORS for local React/Vite development
+
+# Enable CORS for local development and deployed frontend
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=[
+        "http://localhost:5173",
+        "https://motorguard-frontend-0pg0.onrender.com",
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+
 
 # Register API Routers
 app.include_router(dataset_router)
