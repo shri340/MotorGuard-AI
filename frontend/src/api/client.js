@@ -2,7 +2,9 @@
  * Central API Client for MotorGuard AI Backend.
  */
 
-const BASE_URL = ''; // Relative URL handled by Vite proxy to localhost:8000
+const BASE_URL = (
+  import.meta.env.VITE_API_BASE_URL || ''
+).replace(/\/$/, ''); // Relative URL handled by Vite proxy to localhost:8000
 
 export async function fetchJson(endpoint, options = {}) {
   try {
